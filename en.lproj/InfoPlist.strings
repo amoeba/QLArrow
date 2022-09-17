@@ -1,0 +1,4 @@
+﻿/* Localized versions of Info.plist keys */
+
+CFBundleGetInfoString = "QLArrow version 0.1, Copyright (c) 2022 Bryce Mecum.";
+NSHumanReadableCopyright = "Copyright (c) 2020 Bryce Mecum.";
