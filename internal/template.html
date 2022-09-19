@@ -1,0 +1,35 @@
+<head>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ .Filename }}</h1>
+
+    <dl>
+        <dt>Columns</dt>
+        <dd>{{ .NCols }}</dd>
+        <dt>Columns</dt>
+        <dd>{{ .NRows }}</dd>
+    </dl>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range .Columns }}
+            <tr>
+                <td>{{ .Name }}</td>
+                <td>{{ .Type }}</td>
+            </tr>
+            {{end}}
+        </tbody>
+    </table>
+</body>
